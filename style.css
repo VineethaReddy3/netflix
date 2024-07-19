@@ -1,0 +1,130 @@
+.home{
+    background-image: url("https://repository-images.githubusercontent.com/299409710/b42f7780-0fe1-11eb-8460-e459acd20fb4");
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;    
+}
+body{
+    background-color: rgb(28, 26, 26);
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.logo{
+    width:150px;
+    height:50px;
+    padding-top: 15px;
+    padding-left:200px;
+}
+.navbarright{
+    padding-right: 150px;
+    padding-top:15px;
+}
+.text{
+    font-weight:1000px;
+    font-size:25px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.box{
+   display: flex;
+   flex-direction: row;
+   padding-left:10px;
+   padding-top: 5px;
+   justify-content: center;
+}
+.button{
+     background-color: red;
+     width:300px;
+     height: 56px; 
+     border-radius: 5px;
+     font-size:x-large;
+     text-align:center;
+     color: white;
+}
+.page1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:black;
+    background-size: cover;
+    padding:100px;
+}
+.tv{
+    padding-top: 10px;
+    padding-right: 100px;
+}
+.page2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:black;
+    background-size: cover;   
+}
+.page3{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:black;
+    background-size: cover;   
+}
+.page4{
+    background-color:black;
+    background-size: cover;
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+.faq{
+    margin:60px auto;
+    width:100%;
+    max-width: 750px;
+}
+.faq li{
+    list-style: none;
+    width:100%;
+    padding: 5px;
+}
+.faq li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor:pointer;
+    position:relative;
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position:absolute;
+    right:20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.faq .Content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height:0;
+    overflow:hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.faq input[type="radio"]:checked + label + .Content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.faq input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
